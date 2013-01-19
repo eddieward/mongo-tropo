@@ -19,6 +19,11 @@ Mongoid.configure do |config|
   end
 end
 
+class Message
+  include Mongoid::Document
+  field :title, :type => String
+end
+
 # generate a random string for the file name
 def secure_random_string(length = 8, non_ambiguous = false)
   characters = ('a'..'z').to_a + ('A'..'Z').to_a + ('0'..'9').to_a
@@ -83,7 +88,21 @@ end
 
 post '/hangup.json' do
 
-  puts "You got a call from " + params[:callerID]
+  # **Messages -------------------------------------------
+  message = Message.new
+  message.title = "Call from " + params[:callerID]
+  message.save
+
+end
+
+get '/messages' do
+  messages = Message.all
+  output = ""
+
+  messages.each do |m|
+    output << "#{m.title} <br />"
+  end
+  return output
 
 end
 
