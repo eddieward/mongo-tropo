@@ -1,0 +1,8 @@
+h1. Mongo Bongo Rails
+
+
+An example of a Rails app and a Sinatra app sharing a MongoDB
+
+h3. This is the Sinatra part of the equation
+
+h3. There is also a simple Tropo app to test things out

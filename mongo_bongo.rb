@@ -24,6 +24,8 @@ class Message
   field :title, :type => String
 end
 
+
+
 # generate a random string for the file name
 def secure_random_string(length = 8, non_ambiguous = false)
   characters = ('a'..'z').to_a + ('A'..'Z').to_a + ('0'..'9').to_a
