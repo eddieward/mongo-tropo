@@ -1,1 +1,1 @@
-web: bundle exec ruby tropo-cana.rb -p $PORT
+web: bundle exec ruby mongo_bongo.rb -p $PORT
