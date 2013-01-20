@@ -1,4 +1,4 @@
- = Mongo Bongo Rails
+= Mongo Bongo Rails
 
 
 An example of a Rails app and a Sinatra app sharing a MongoDB
@@ -13,21 +13,17 @@ There is also a simple Tropo app to test things out
 
 
 
+=== demo: call +1(415) 523-0558
 
-             === demo: call +1(415) 523-0558
-
-
-             === follow the instructions for setting up Mongo-Bongo-Rails:
+=== follow the instructions for setting up Mongo-Bongo-Rails:
 
 
-
-             === edit:
+=== edit:
 
                config/amazon_s3
 
 
-
-             === commands:
+=== commands:
 
                bundle
                git init
@@ -36,7 +32,7 @@ There is also a simple Tropo app to test things out
                heroku create 'your-app-name'
                git push heroku master
 
-             === commands to config database:
+=== commands to config database:
 
 You will find this link useful: https://devcenter.heroku.com/articles/config-vars
 
@@ -45,7 +41,7 @@ You will find this link useful: https://devcenter.heroku.com/articles/config-var
               heroku config:add  MONGOHQ_URL='copied-database-string'
               heroku config   # to check things out
 
-             === things to do:
+=== things to do:
 
              Create a new Tropo WebAPI application at www.Tropo.com
                add a phone number
