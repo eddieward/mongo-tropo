@@ -1,4 +1,4 @@
-= Mongo Bongo Rails
+= Mongo Bongo for Sinatra
 
 
 An example of a Rails app and a Sinatra app sharing a MongoDB
@@ -8,12 +8,10 @@ This is the Sinatra part of the equation
 There is also a simple Tropo app to test things out
 
 
-
-
-
-
-
 === demo: call +1(415) 523-0558
+
+go to: http://mongo-bongo-rails.herokuapp.com
+
 
 === follow the instructions for setting up Mongo-Bongo-Rails:
 
@@ -54,4 +52,5 @@ You will find this link useful: https://devcenter.heroku.com/articles/config-var
                Call your number and leave a message
 
 
-             Special Thanks to the folks at Tropo
+
+Special Thanks to the folks at Tropo
