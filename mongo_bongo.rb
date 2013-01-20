@@ -75,12 +75,15 @@ post '/record.json' do
 
   t.on :event => 'hangup', :next => '/hangup.json?filename=' + filename + '&callerID=' + callerID
 
+  # be sure to change the url to your own
+  # note: a full url works best
+
   t.record({:name => 'recording',
             :voice => "Veronica",
             :timeout => 60,
             :maxTime => 120,
             :format => "audio/mp3",
-            :url => 'http://tropo-sphere.herokuapp.com/post_audio_to_s3?file_name=' + filename + ".mp3",
+            :url => 'http://mongo-bongo.herokuapp.com/post_audio_to_s3?file_name=' + filename + ".mp3",
             :choices => {:terminator => "#"}
            }) do
     say :value => greeting
