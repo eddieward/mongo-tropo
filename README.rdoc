@@ -12,8 +12,8 @@ There is also a simple Tropo app to test things out
 
 go to: http://mongo-bongo-rails.herokuapp.com
 
-
-=== follow the instructions for setting up Mongo-Bongo-Rails:
+=== Before you start:
+=== Follow the instructions for setting up Mongo-Bongo-Rails.
 
 
 === edit:
