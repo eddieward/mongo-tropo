@@ -69,7 +69,7 @@ post '/record.json' do
 
   greeting = 'Hello.  Welcome to the Mongo Bongo. Please leave a message and we will listen to it.  Thank you for calling the Mongo Bongo.'
 
-  filename = "message-" + secure_random_string
+  filename = "mongo-bongo-message-" + secure_random_string
 
   filename = URI.escape(filename)
 
