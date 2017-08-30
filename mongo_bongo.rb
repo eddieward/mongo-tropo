@@ -69,7 +69,7 @@ post '/record.json' do
 
   greeting = 'Hello.  Welcome to the Mongo Bongo. Please leave a message and we will listen to it.  Thank you for calling the Mongo Bongo.'
 
-  filename = "mongo-bongo-message-" + secure_random_string
+  filename = "mongo-tropo-message-" + secure_random_string
 
   filename = URI.escape(filename)
 
@@ -83,7 +83,7 @@ post '/record.json' do
             :timeout => 60,
             :maxTime => 120,
             :format => "audio/mp3",
-            :url => 'http://mongo-bongo.herokuapp.com/post_audio_to_s3?file_name=' + filename + ".mp3",
+            :url => 'http://mongo-tropo.herokuapp.com/post_audio_to_s3?file_name=' + filename + ".mp3",
             :choices => {:terminator => "#"}
            }) do
     say :value => greeting
