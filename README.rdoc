@@ -1,4 +1,4 @@
-= Mongo Bongo for Sinatra
+= Mongo Tropo for Sinatra
 
 
 An example of a Rails app and a Sinatra app sharing a MongoDB
